@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Status | Indegene</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Today Status: <span id='todayDate'></span></h2>
+    <input type="hidden" name="standup" id="standStatus" value='status'>
+    <form id="todayProjectStatus" class="hell">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Project_1</th>
+                    <th>Project_2</th>
+                    <th>Project_3</th>
+                    <th>Project_4</th>
+                    <th>Project_5</th>
+                    <th>Project_6</th>
+                    <th>Project_7</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="name[]" id="Akshay_name" placeholder="Akshay" readonly value="Akshay"></td>
+                    <td><input type="text" name="project1[]" id="Akshay_project1" placeholder="Enter Project 1"></td>
+                    <td><input type="text" name="project2[]" id="Akshay_project2" placeholder="Enter Project 2"></td>
+                    <td><input type="text" name="project3[]" id="Akshay_project3" placeholder="Enter Project 3"></td>
+                    <td><input type="text" name="project4[]" id="Akshay_project4" placeholder="Enter Project 4"></td>
+                    <td><input type="text" name="project5[]" id="Akshay_project5" placeholder="Enter Project 5"></td>
+                    <td><input type="text" name="project6[]" id="Akshay_project6" placeholder="Enter Project 6"></td>
+                    <td><input type="text" name="project7[]" id="Akshay_project7" placeholder="Enter Project 7"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name[]" id="Banupriya_name" placeholder="Banupriya" readonly value="Banupriya"></td>
+                    <td><input type="text" name="project1[]" id="Banupriya_project1" placeholder="Enter Project 1"></td>
+                    <td><input type="text" name="project2[]" id="Banupriya_project2" placeholder="Enter Project 2"></td>
+                    <td><input type="text" name="project3[]" id="Banupriya_project3" placeholder="Enter Project 3"></td>
+                    <td><input type="text" name="project4[]" id="Banupriya_project4" placeholder="Enter Project 4"></td>
+                    <td><input type="text" name="project5[]" id="Banupriya_project5" placeholder="Enter Project 5"></td>
+                    <td><input type="text" name="project6[]" id="Banupriya_project6" placeholder="Enter Project 6"></td>
+                    <td><input type="text" name="project7[]" id="Banupriya_project7" placeholder="Enter Project 7"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name[]" id="Barkath_name" placeholder="Barkath" readonly value="Barkath"></td>
+                    <td><input type="text" name="project1[]" id="Barkath_project1" placeholder="Enter Project 1"></td>
+                    <td><input type="text" name="project2[]" id="Barkath_project2" placeholder="Enter Project 2"></td>
+                    <td><input type="text" name="project3[]" id="Barkath_project3" placeholder="Enter Project 3"></td>
+                    <td><input type="text" name="project4[]" id="Barkath_project4" placeholder="Enter Project 4"></td>
+                    <td><input type="text" name="project5[]" id="Barkath_project5" placeholder="Enter Project 5"></td>
+                    <td><input type="text" name="project6[]" id="Barkath_project6" placeholder="Enter Project 6"></td>
+                    <td><input type="text" name="project7[]" id="Barkath_project7" placeholder="Enter Project 7"></td>
+                </tr>
+              
+                <!-- You can add more rows as needed -->
+            </tbody>
+        </table>
+        <button type="button" onclick="addRow()">Add Row</button>
+        <button type="button" id='addStatus'>Submit</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
